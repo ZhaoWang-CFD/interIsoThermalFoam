@@ -1,0 +1,41 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2512                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      thermalProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+Prt 0.85;
+
+phase1 //Liquid phase
+{
+    cp  4180;
+    kappa   0.6;
+}
+
+phase2 //gas phase
+{
+    cp  2010;
+    kappa   0.025;
+}
+
+phaseChange // Lee's phase-change model
+{
+    Tsat    373.15;
+    Lv  2.257e6;
+    Cevap   0;
+    Ccond    1e5;
+}
+
+
+// ************************************************************************* //
