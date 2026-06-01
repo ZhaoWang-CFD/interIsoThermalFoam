@@ -29,26 +29,16 @@ License
     along with OpenFOAM.  If not, see <http://www.gnu.org/licenses/>.
 
 Application
-    interIsoFoam
+    interIsoThermalFoam
 
 Group
     grpMultiphaseSolvers
 
 Description
-    Solver derived from interFoam for two incompressible, isothermal immiscible
-    fluids using the isoAdvector phase-fraction based interface capturing
-    approach, with optional mesh motion and mesh topology changes including
-    adaptive re-meshing.
+    Solver derived from interIsoFoam with a thermal phase-change module using the Lee's model
 
-    Reference:
-    \verbatim
-        Roenby, J., Bredmose, H. and Jasak, H. (2016).
-        A computational method for sharp interface advection
-        Royal Society Open Science, 3
-        doi 10.1098/rsos.160405
-    \endverbatim
-
-    isoAdvector code supplied by Johan Roenby, STROMNING (2018)
+Authors
+    Zhao Wang
 
 \*---------------------------------------------------------------------------*/
 
